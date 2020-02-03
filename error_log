@@ -1,0 +1,6 @@
+[19-Aug-2016 16:56:47 UTC] PHP Fatal error:  Uncaught exception 'ActiveRecord\DatabaseException' with message 'exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/cloudmedia/public_html/becreativecloud.com/crm/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php:309
+Stack trace:
+#0 /home/cloudmedia/public_html/becreativecloud.com/crm/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(309): PDOStatement->execute(Array)
+#1 /home/cloudmedia/public_html/becreativecloud.com/crm/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/adapters/MysqlAdapter.php(25): ActiveRecord\Connection->query('SHOW COLUMNS FR...')
+#2 /home/cloudmedia/public_html/becreativecloud.com/crm/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php(254): ActiveRecord\MysqlAdapter->query_column_info('`invoices`')
+#3 /home/cloudmedia/public_html/becreativecloud.com/crm/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Table.php(370): ActiveRecord\Connectio in /home/cloudmedia/public_html/becreativecloud.com/crm/sparks/php-activerecord/0.0.3/vendor/php-activerecord/lib/Connection.php on line 312
